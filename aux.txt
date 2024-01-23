@@ -1,0 +1,15 @@
+
+pip install google-cloud-translate google-cloud-speech
+
+
+python3 subtitulos.py <video_path> es <video_salida>
+es -es los subtitulos a español
+
+//debes de tener los subtitulos del original
+python3 main.py <video_path> subtitulos.srt es <video_salida>
+
+
+Esto sirve si tienes los subitulos ya traducidos
+ffmpeg -i video_sin_subtitulos.mp4 -vf subtitles=subtitulos.srt video_con_subtitulos.mp4
+
+
